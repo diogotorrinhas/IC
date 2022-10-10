@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diogo/Desktop/IC/project1/sndfile-example-src/wav_cp.cpp
+iostream
+-
+vector
+-
+sndfile.hh
+-
+

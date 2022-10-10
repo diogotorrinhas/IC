@@ -1,0 +1,5 @@
+/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles/rebuild_cache.dir
+/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles/edit_cache.dir
+/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles/wav_dct.dir
+/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles/wav_hist.dir
+/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles/wav_cp.dir
