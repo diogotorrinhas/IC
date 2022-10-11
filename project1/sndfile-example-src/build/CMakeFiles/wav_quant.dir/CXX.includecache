@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diogo/Desktop/IC/project1/sndfile-example-src/wav_quant.cpp
+iostream
+-
+vector
+-
+sndfile.hh
+-
+wav_quant.h
+/home/diogo/Desktop/IC/project1/sndfile-example-src/wav_quant.h
+
+/home/diogo/Desktop/IC/project1/sndfile-example-src/wav_quant.h
+iostream
+-
+vector
+-
+map
+-
+sndfile.hh
+-
+
