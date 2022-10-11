@@ -20,8 +20,7 @@ int main(int argc, char *argv[]) {
 		return 1;
     }
 
-    SndfileHandle sfhOut { argv[argc-1],SFM_WRITE, sfhIn.format(),
-    sfhIn.channels(), sfhIn.samplerate() };
+    SndfileHandle sfhOut { argv[argc-1],SFM_WRITE, sfhIn.format(),sfhIn.channels(), sfhIn.samplerate() };
 	if(sfhOut.error()) {
 		cerr << "Error: invalid output file\n";
 		return 1;
