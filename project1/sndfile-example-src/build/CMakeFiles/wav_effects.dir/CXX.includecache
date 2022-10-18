@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diogo/Desktop/IC/project1/sndfile-example-src/AudioFile.h
+iostream
+-
+vector
+-
+cassert
+-
+string
+-
+cstring
+-
+fstream
+-
+unordered_map
+-
+iterator
+-
+algorithm
+-
+
+/home/diogo/Desktop/IC/project1/sndfile-example-src/wav_effects.cpp
+iostream
+-
+AudioFile.h
+/home/diogo/Desktop/IC/project1/sndfile-example-src/AudioFile.h
+cmath
+-
+

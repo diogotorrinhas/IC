@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named wav_effects
+
+# Build rule for target.
+wav_effects: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 wav_effects
+.PHONY : wav_effects
+
+# fast build rule for target.
+wav_effects/fast:
+	$(MAKE) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/build
+.PHONY : wav_effects/fast
+
+#=============================================================================
 # Target rules for targets named wav_quant
 
 # Build rule for target.
@@ -216,6 +229,33 @@ wav_dct.cpp.s:
 	$(MAKE) -f CMakeFiles/wav_dct.dir/build.make CMakeFiles/wav_dct.dir/wav_dct.cpp.s
 .PHONY : wav_dct.cpp.s
 
+wav_effects.o: wav_effects.cpp.o
+
+.PHONY : wav_effects.o
+
+# target to build an object file
+wav_effects.cpp.o:
+	$(MAKE) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/wav_effects.cpp.o
+.PHONY : wav_effects.cpp.o
+
+wav_effects.i: wav_effects.cpp.i
+
+.PHONY : wav_effects.i
+
+# target to preprocess a source file
+wav_effects.cpp.i:
+	$(MAKE) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/wav_effects.cpp.i
+.PHONY : wav_effects.cpp.i
+
+wav_effects.s: wav_effects.cpp.s
+
+.PHONY : wav_effects.s
+
+# target to generate assembly for a file
+wav_effects.cpp.s:
+	$(MAKE) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/wav_effects.cpp.s
+.PHONY : wav_effects.cpp.s
+
 wav_hist.o: wav_hist.cpp.o
 
 .PHONY : wav_hist.o
@@ -278,6 +318,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... wav_effects"
 	@echo "... wav_quant"
 	@echo "... wav_dct"
 	@echo "... wav_hist"
@@ -288,6 +329,9 @@ help:
 	@echo "... wav_dct.o"
 	@echo "... wav_dct.i"
 	@echo "... wav_dct.s"
+	@echo "... wav_effects.o"
+	@echo "... wav_effects.i"
+	@echo "... wav_effects.s"
 	@echo "... wav_hist.o"
 	@echo "... wav_hist.i"
 	@echo "... wav_hist.s"

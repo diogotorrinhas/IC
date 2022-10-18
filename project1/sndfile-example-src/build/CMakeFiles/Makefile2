@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /home/diogo/Desktop/IC/project1/sndfile-example-src/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/wav_effects.dir/all
 all: CMakeFiles/wav_quant.dir/all
 all: CMakeFiles/wav_dct.dir/all
 all: CMakeFiles/wav_hist.dir/all
@@ -66,6 +67,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/wav_effects.dir/clean
 clean: CMakeFiles/wav_quant.dir/clean
 clean: CMakeFiles/wav_dct.dir/clean
 clean: CMakeFiles/wav_hist.dir/clean
@@ -74,13 +76,40 @@ clean: CMakeFiles/wav_cp.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/wav_effects.dir
+
+# All Build rule for target.
+CMakeFiles/wav_effects.dir/all:
+	$(MAKE) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/depend
+	$(MAKE) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles --progress-num=5,6 "Built target wav_effects"
+.PHONY : CMakeFiles/wav_effects.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/wav_effects.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/wav_effects.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles 0
+.PHONY : CMakeFiles/wav_effects.dir/rule
+
+# Convenience name for target.
+wav_effects: CMakeFiles/wav_effects.dir/rule
+
+.PHONY : wav_effects
+
+# clean rule for target.
+CMakeFiles/wav_effects.dir/clean:
+	$(MAKE) -f CMakeFiles/wav_effects.dir/build.make CMakeFiles/wav_effects.dir/clean
+.PHONY : CMakeFiles/wav_effects.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/wav_quant.dir
 
 # All Build rule for target.
 CMakeFiles/wav_quant.dir/all:
 	$(MAKE) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/depend
 	$(MAKE) -f CMakeFiles/wav_quant.dir/build.make CMakeFiles/wav_quant.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles --progress-num=7,8 "Built target wav_quant"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles --progress-num=9,10 "Built target wav_quant"
 .PHONY : CMakeFiles/wav_quant.dir/all
 
 # Build rule for subdir invocation for target.
@@ -134,7 +163,7 @@ CMakeFiles/wav_dct.dir/clean:
 CMakeFiles/wav_hist.dir/all:
 	$(MAKE) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/depend
 	$(MAKE) -f CMakeFiles/wav_hist.dir/build.make CMakeFiles/wav_hist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles --progress-num=5,6 "Built target wav_hist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/diogo/Desktop/IC/project1/sndfile-example-src/build/CMakeFiles --progress-num=7,8 "Built target wav_hist"
 .PHONY : CMakeFiles/wav_hist.dir/all
 
 # Build rule for subdir invocation for target.
