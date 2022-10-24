@@ -47,20 +47,20 @@ int main(int argc, char* argv[])
     //Ganho
     double alfa=0.8;    //Podemos mudar este valor, variando entre 0 e 1
 
-    //atraso do eco de 1 
-    int a=1;        //Podemos aumentar ou diminuir atraso
+    //atraso do eco de 100ms
+    int a=4410;        //Podemos aumentar ou diminuir atraso 44100 / 100
 
     //Copy samples from one buffer to another
     for(int j = 0; j < numChannels; j++){
         for(int i = 0; i < numSamples; i++){
 
-            // DESCOMENTAR O TIPO QUE QUEREMOS
+            // DESCOMENTAR O TIPO QUE QUEREMOS , Eco Ou Multiplos Ecos
 
             //Eco
-            //buffer[j][i+1] = af.samples[j][i+1] + alfa*af.samples[j][i+1-a] ;
+            //buffer[j][i+1] = (af.samples[j][i+1] + alfa*af.samples[j][i+1-a]) / (1+alfa);
     
             //Múltiplos Ecos até expoente = 3 , podemos aumentar ou diminui
-            buffer[j][i+1] = af.samples[j][i+1] + pow(alfa,1) * af.samples[j][i+1-(a*1)] + pow(alfa,2) * af.samples[j][i+1-(a*2)] + pow(alfa,3) * af.samples[j][i+1-(a*3)];
+            buffer[j][i+1] = (af.samples[j][i+1] + pow(alfa,1) * af.samples[j][i+1-(a*1)] + pow(alfa,2) * af.samples[j][i+1-(a*2)] + pow(alfa,3) * af.samples[j][i+1-(a*3)]) / (1+alfa);
 
         }
     }
