@@ -1,4 +1,5 @@
 #include "BitStream.h"
+
 #include <math.h>
 #include <string>
 
@@ -61,6 +62,13 @@ void BitStream::writeNbits(char* bits, int n){
     for(int i = 0; i < n; i++){
         writeBit(bits[i]);
     }
+}
+
+bool BitStream::eof(){
+    if(mode == 0) throw runtime_error("Cannot access eof() in 'w' mode");
+    if(file.tellg() < size) return false;
+    if(pointer > 0) return false;
+    return true;
 }
 
 // write remain buffer on file

@@ -53,6 +53,12 @@ class BitStream {
         void writeNbits(char* bits, int n);
 
         /**
+         * Returns true if stream reached end of file, false if not.
+         * @return boolean
+         */
+        bool eof();
+
+        /**
          * Closes file stream. If 'w' mode, last byte is written.
          */
         void close();
