@@ -5,8 +5,11 @@
 ### Ex2:
 #### Comandos de compilação:
 >../sndfile-example-bin/ex2 sample.wav Avg > hist.txt 
+
 >../sndfile-example-bin/ex2 sample.wav Difference > histDiff.txt 
+
 >- gnuplot -p -e ‘set sty d hist;set xtic rot; plot “hist.txt” u 2:xtic(1)’ 
+
 >- gnuplot -p -e ‘set sty d hist;set xtic rot; plot “histDiff.txt” u
 
 ### Ex3:
