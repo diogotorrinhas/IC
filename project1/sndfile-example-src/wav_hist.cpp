@@ -43,7 +43,6 @@ int main(int argc, char *argv[]) {
 		samples.resize(nFrames * sndFile.channels());
 		hist.update(samples);
 	}
-
 	hist.dump(channel);
 	return 0;
 }
