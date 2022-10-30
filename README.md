@@ -10,7 +10,7 @@
 
 >- gnuplot -p -e ‘set sty d hist;set xtic rot; plot “hist.txt” u 2:xtic(1)’ 
 
->- gnuplot -p -e ‘set sty d hist;set xtic rot; plot “histDiff.txt” u
+- gnuplot -p -e ‘set sty d hist;set xtic rot; plot “histDiff.txt” u 2:xtic(1)’ 
 
 ### Ex3:
 #### Comandos de compilação:
