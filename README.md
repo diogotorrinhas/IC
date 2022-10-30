@@ -1,6 +1,13 @@
 # Information and Coding
 ## Comandos de Compilação e Resultados
 
+
+### Ex3:
+#### Comandos de compilação:
+move 10 bits
+> ../sndfile-example-bin/wav_quant sample.wav 10 samplebits.wav
+
+
 ### Ex4:
 #### Comandos de compilação:
 > g++ wav_cmp.cpp -o wav_cmp
