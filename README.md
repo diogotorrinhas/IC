@@ -73,7 +73,7 @@ Ficheiro resultante após usar decoder:
 
 ![ex7txtdesconv](https://user-images.githubusercontent.com/84578738/198883119-116f63c8-8a15-470b-80ef-f644ac6f8402.png)
 
-### Ex7:
+### Ex8:
 #### Comandos de compilação:
 ../sndfile-example-bin/lossyencode sample.wav lossyoutout.wav
 
