@@ -75,6 +75,7 @@ Ficheiro resultante após usar decoder:
 
 ### Ex7:
 #### Comandos de compilação:
+../sndfile-example-bin/lossyencode sample.wav lossyoutout.wav
 
 
 
