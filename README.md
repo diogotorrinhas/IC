@@ -2,11 +2,23 @@
 ## Comandos de Compilação e Resultados
 
 
+### Ex2:
+#### Comandos de compilação:
+>../sndfile-example-bin/ex2 sample.wav Avg > hist.txt 
+
+>../sndfile-example-bin/ex2 sample.wav Difference > histDiff.txt 
+
+>- gnuplot -p -e ‘set sty d hist;set xtic rot; plot “hist.txt” u 2:xtic(1)’ 
+
+- gnuplot -p -e ‘set sty d hist;set xtic rot; plot “histDiff.txt” u 2:xtic(1)’ 
+
+Comparar ambos os grátficos
+
 ### Ex3:
 #### Comandos de compilação:
 move 10 bits
 > ../sndfile-example-bin/wav_quant sample.wav 10 samplebits.wav
-
+- Comparar sample.wav com samplebits.wav
 
 ### Ex4:
 #### Comandos de compilação:
@@ -60,6 +72,10 @@ Para o Decoder (converter o ficheiro bin anterior, em ficheiro txt (ficheiro res
 Ficheiro resultante após usar decoder:
 
 ![ex7txtdesconv](https://user-images.githubusercontent.com/84578738/198883119-116f63c8-8a15-470b-80ef-f644ac6f8402.png)
+
+### Ex8:
+#### Comandos de compilação:
+../sndfile-example-bin/lossyencode sample.wav lossyoutout.wav
 
 
 
