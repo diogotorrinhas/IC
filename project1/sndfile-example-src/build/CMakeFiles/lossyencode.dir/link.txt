@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -std=c++17 -O3   CMakeFiles/lossyencode.dir/lossyencode.cpp.o  -o /home/diogo/Desktop/IC/project1/sndfile-example-bin/lossyencode  -lsndfile -lfftw3 

@@ -29,3 +29,6 @@ target_link_libraries (wav_quant sndfile fftw3)
 add_executable (wav_effects wav_effects.cpp)
 target_link_libraries (wav_effects sndfile fftw3)
 
+add_executable (lossyencode lossyencode.cpp)
+target_link_libraries (lossyencode sndfile fftw3)
+

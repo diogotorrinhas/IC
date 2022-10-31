@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named lossyencode
+
+# Build rule for target.
+lossyencode: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lossyencode
+.PHONY : lossyencode
+
+# fast build rule for target.
+lossyencode/fast:
+	$(MAKE) -f CMakeFiles/lossyencode.dir/build.make CMakeFiles/lossyencode.dir/build
+.PHONY : lossyencode/fast
+
+#=============================================================================
 # Target rules for targets named wav_effects
 
 # Build rule for target.
@@ -214,6 +227,33 @@ ex2.s: ex2.cpp.s
 ex2.cpp.s:
 	$(MAKE) -f CMakeFiles/ex2.dir/build.make CMakeFiles/ex2.dir/ex2.cpp.s
 .PHONY : ex2.cpp.s
+
+lossyencode.o: lossyencode.cpp.o
+
+.PHONY : lossyencode.o
+
+# target to build an object file
+lossyencode.cpp.o:
+	$(MAKE) -f CMakeFiles/lossyencode.dir/build.make CMakeFiles/lossyencode.dir/lossyencode.cpp.o
+.PHONY : lossyencode.cpp.o
+
+lossyencode.i: lossyencode.cpp.i
+
+.PHONY : lossyencode.i
+
+# target to preprocess a source file
+lossyencode.cpp.i:
+	$(MAKE) -f CMakeFiles/lossyencode.dir/build.make CMakeFiles/lossyencode.dir/lossyencode.cpp.i
+.PHONY : lossyencode.cpp.i
+
+lossyencode.s: lossyencode.cpp.s
+
+.PHONY : lossyencode.s
+
+# target to generate assembly for a file
+lossyencode.cpp.s:
+	$(MAKE) -f CMakeFiles/lossyencode.dir/build.make CMakeFiles/lossyencode.dir/lossyencode.cpp.s
+.PHONY : lossyencode.cpp.s
 
 wav_cp.o: wav_cp.cpp.o
 
@@ -358,6 +398,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... lossyencode"
 	@echo "... wav_effects"
 	@echo "... wav_quant"
 	@echo "... ex2"
@@ -367,6 +408,9 @@ help:
 	@echo "... ex2.o"
 	@echo "... ex2.i"
 	@echo "... ex2.s"
+	@echo "... lossyencode.o"
+	@echo "... lossyencode.i"
+	@echo "... lossyencode.s"
 	@echo "... wav_cp.o"
 	@echo "... wav_cp.i"
 	@echo "... wav_cp.s"

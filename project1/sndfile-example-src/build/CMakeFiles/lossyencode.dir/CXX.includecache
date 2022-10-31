@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diogo/Desktop/IC/project1/sndfile-example-src/BitStream2.cpp
+iostream
+-
+fstream
+-
+string
+-
+vector
+-
+stdlib.h
+-
+
+/home/diogo/Desktop/IC/project1/sndfile-example-src/lossyencode.cpp
+iostream
+-
+fstream
+-
+vector
+-
+cmath
+-
+fftw3.h
+-
+sndfile.hh
+-
+BitStream2.cpp
+/home/diogo/Desktop/IC/project1/sndfile-example-src/BitStream2.cpp
+
